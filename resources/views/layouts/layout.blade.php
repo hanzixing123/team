@@ -61,44 +61,40 @@
     <dd><a href="{{url('/custom/index')}}">客户列表</a></dd>
    </dl>
   </li>
-  <li>
+    <li>
    <dl>
-    <dt>订单信息</dt>
-    <dd><a href="order_list.html">订单列表示例</a></dd>
-    <dd><a href="order_detail.html">订单详情示例</a></dd>
+    <dt>客户拜访管理</dt>
+    <dd><a href="{{url('/visit/add')}}">业务员添加</a></dd>
+    <dd><a href="{{url('/visit/index')}}">业务员列表</a></dd>
    </dl>
   </li>
   <li>
    <dl>
-    <dt>会员管理</dt>
-    <dd><a href="user_list.html">会员列表示例</a></dd>
-    <dd><a href="user_detail.html">添加会员（详情）示例</a></dd>
-    <dd><a href="user_rank.html">会员等级示例</a></dd>
-    <dd><a href="adjust_funding.html">会员资金管理示例</a></dd>
+    <dt>业务员管理</dt>
+    <dd><a href="{{url('/salesman/add')}}">业务员添加</a></dd>
+    <dd><a href="{{url('/salesman/index')}}">业务员列表</a></dd>
    </dl>
   </li>
   <li>
    <dl>
-    <dt>基础设置</dt>
-    <dd><a href="setting.html">站点基础设置示例</a></dd>
+    <dt>综合查询</dt>
+    <dd><a href="{{'/'}}">客户信息查找</a></dd>
+    <dd><a href="{{'/'}}">客户拜访信息查找</a></dd>
    </dl>
   </li>
   <li>
    <dl>
-    <dt>配送与支付设置</dt>
-    <dd><a href="express_list.html">配送方式</a></dd>
-    <dd><a href="pay_list.html">支付方式</a></dd>
+    <dt>统计分析</dt>
+    <dd><a href="{{'/'}}">客户行业统计</a></dd>
+    <dd><a href="{{'/'}}">客户来源统计</a></dd>
    </dl>
   </li>
   <li>
    <dl>
-    <dt>在线统计</dt>
-    <dd><a href="discharge_statistic.html">流量统计</a></dd>
-    <dd><a href="sales_volume.html">销售额统计</a></dd>
+    <dt>系统管理</dt>
+    <dd><a href="{{'/user/add'}}">用户新增</a></dd>
+    <dd><a href="{{'/user/index'}}">用户管理</a></dd>
    </dl>
-  </li>
-  <li>
-   <p class="btm_infor">© DeathGhost.cn 版权所有</p>
   </li>
  </ul>
 </aside>
