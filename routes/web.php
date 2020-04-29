@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/',function () {
+//     return view('welcome');
+// });
+
+Route::get('/','Admin\IndexController@index');//首页
+
+
+Route::prefix("/custom")->group(function(){
+	Route::get('/add','Admin\CustomController@create');//客户添加
+	
+
+
 });
+
