@@ -78,8 +78,8 @@
   <li>
    <dl>
     <dt>综合查询</dt>
-    <dd><a href="{{'/'}}">客户信息查找</a></dd>
-    <dd><a href="{{'/'}}">客户拜访信息查找</a></dd>
+    <dd><a href="{{'/recycle'}}">客户信息查找</a></dd>
+    <dd><a href="{{'/recycle/reds'}}">客户拜访信息查找</a></dd>
    </dl>
   </li>
   <li>

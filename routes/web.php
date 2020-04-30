@@ -47,6 +47,10 @@ Route::prefix("/salesman")->group(function(){
 	Route::get("edit/{id}","Admin\SalesmanController@edit"); //修改
 	Route::post("update/{id}","Admin\SalesmanController@update"); //执行修改
 });
+Route::prefix("/recycle")->group(function(){
+	Route::any("/","Admin\RecycleController@index");  //执行展示页面
+	Route::any("/reds","Admin\RecycleController@reds");  //k了可见度发挥
+});
 
 
 
