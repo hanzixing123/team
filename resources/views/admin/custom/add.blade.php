@@ -51,12 +51,12 @@
 			<!-- <input type="text" class="form-control"name="" id="firstname" 
 				   placeholder="请输入业务员"> -->
 			<select name="sale_id" class="form-control" id="firstname">
-				<option value="sale_name">请输入业务员</option>
+				<option value="">请输入业务员</option>
 				@foreach($res as $v)
 				<option value="{{$v->sale_id}}">{{$v->sale_name}}</option>
 				@endforeach
 			</select>
-			 <b><font color='red'><h4>{{$errors->first('sale_name')}}</h4></font></b>
+			 <b><font color='red'><h4>{{$errors->first('sale_id')}}</h4></font></b>
 		</div>
 	</div>
 		<div class="form-group">

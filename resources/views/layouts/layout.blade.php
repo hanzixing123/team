@@ -71,8 +71,8 @@
   <li>
    <dl>
     <dt>业务员管理</dt>
-    <dd><a href="{{url('/salesman/add')}}">业务员添加</a></dd>
-    <dd><a href="{{url('/salesman/')}}">业务员列表</a></dd>
+    <dd><a href="{{url('/salesman/create')}}">业务员添加</a></dd>
+    <dd><a href="{{url('/salesman/index')}}">业务员列表</a></dd>
    </dl>
   </li>
   <li>

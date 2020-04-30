@@ -28,7 +28,7 @@ class CustomPost extends FormRequest
         if($name=='chong'){
         return [
             'cust_name'=>'required|unique:custom|regex:/^[\x{4e00}-\x{9fa5}\w]{2,10}$/u',
-            'sale_name'=>'required', 
+            'sale_id'=>'required', 
             'cust_phone'=>'required|regex:/^\w{8}$/',
             'cust_tel'=>'required|regex:/^1[356789]\d{9}$/',
         ];

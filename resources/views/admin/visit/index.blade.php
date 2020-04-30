@@ -32,7 +32,7 @@
 				<td colspan='2'>{{$v->vis_url}}</td>
 				<td colspan='2'>{{$v->vis_desc}}</td>
 				<td colspan='3'>{{date('Y-m-d H:i:s',$v->vis_uptime)}}</td>
-				<td colspan='4'><a class="shanchu">删除</a><a href="{{url('/visit/edit/'.$v->cust_id)}}">修改</a></td>
+				<td colspan='4'><a class="shanchu">删除</a><a href="{{url('/visit/edit/'.$v->vis_id)}}">修改</a></td>
 			</tr>
 			@endforeach
 			</table>

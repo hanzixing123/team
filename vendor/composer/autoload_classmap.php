@@ -9,9 +9,11 @@ return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Custom' => $baseDir . '/app/Custom.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Flight' => $baseDir . '/app/Flight.php',
     'App\\Http\\Controllers\\Admin\\CustomController' => $baseDir . '/app/Http/Controllers/Admin/CustomController.php',
     'App\\Http\\Controllers\\Admin\\IndexController' => $baseDir . '/app/Http/Controllers/Admin/IndexController.php',
-    'App\\Http\\Controllers\\Admin\\RecycleController' => $baseDir . '/app/Http/Controllers/Admin/RecycleController.php',
+    'App\\Http\\Controllers\\Admin\\LoginController' => $baseDir . '/app/Http/Controllers/Admin/LoginController.php',
+
     'App\\Http\\Controllers\\Admin\\SalesmanController' => $baseDir . '/app/Http/Controllers/Admin/SalesmanController.php',
     'App\\Http\\Controllers\\Admin\\VisitController' => $baseDir . '/app/Http/Controllers/Admin/visitController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
@@ -23,12 +25,16 @@ return array(
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Login' => $baseDir . '/app/Login.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
+
     'App\\RecycleModel' => $baseDir . '/app/RecycleModel.php',
+
+
     'App\\Salesman' => $baseDir . '/app/Salesman.php',
     'App\\User' => $baseDir . '/app/User.php',
     'App\\Visit' => $baseDir . '/app/Visit.php',

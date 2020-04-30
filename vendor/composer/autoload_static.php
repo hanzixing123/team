@@ -471,9 +471,11 @@ class ComposerStaticInit2c14ad2bf1e01b51b1b062bf59dfb689
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Custom' => __DIR__ . '/../..' . '/app/Custom.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Flight' => __DIR__ . '/../..' . '/app/Flight.php',
         'App\\Http\\Controllers\\Admin\\CustomController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CustomController.php',
         'App\\Http\\Controllers\\Admin\\IndexController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/IndexController.php',
-        'App\\Http\\Controllers\\Admin\\RecycleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RecycleController.php',
+        'App\\Http\\Controllers\\Admin\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/LoginController.php',
+
         'App\\Http\\Controllers\\Admin\\SalesmanController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SalesmanController.php',
         'App\\Http\\Controllers\\Admin\\VisitController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/visitController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -485,12 +487,15 @@ class ComposerStaticInit2c14ad2bf1e01b51b1b062bf59dfb689
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Login' => __DIR__ . '/../..' . '/app/Login.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+
         'App\\RecycleModel' => __DIR__ . '/../..' . '/app/RecycleModel.php',
+
         'App\\Salesman' => __DIR__ . '/../..' . '/app/Salesman.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\Visit' => __DIR__ . '/../..' . '/app/Visit.php',

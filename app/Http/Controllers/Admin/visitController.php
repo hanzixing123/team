@@ -80,6 +80,7 @@ class VisitController extends Controller
     {
         //
           $res=Visit::find($id);
+         // dd($res);
         $Salesman=Salesman::all();
         $Custom=Custom::all();
        //dd($res);
