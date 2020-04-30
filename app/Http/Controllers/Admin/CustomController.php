@@ -4,7 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Salesman;//   
+use App\Custom;
+use App\Http\Requests\CustomPost;//验证表单
+use Validator;//第三种
+use Illuminate\Validation\Rule;//第三种
 class CustomController extends Controller
 {
     /**
@@ -15,6 +19,15 @@ class CustomController extends Controller
     public function index()
     {
         //
+      $Salesman=Salesman::all();
+
+//leftJoin('custom b','visit.cust_id','=','b. cust_id')
+
+      $Custom=Custom::join('Salesman','salesman.sale_id','=','custom.sale_id')->get();
+
+        return view('admin.custom.index',['Salesman'=>$Salesman,'Custom'=>$Custom]);
+
+
     }
 
     /**
@@ -25,7 +38,8 @@ class CustomController extends Controller
     public function create()
     {
         //
-        return view('admin.custom.add');
+        $res=Salesman::all();
+        return view('admin.custom.add',['res'=>$res]);
     }
 
     /**
@@ -34,9 +48,20 @@ class CustomController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CustomPost $request)
     {
         //
+        $zhi=request()->except('_token');
+        $res= Custom::insert($zhi);
+        if($res){
+           return redirect('custom/');  
+        }
+       
+
+
+
+
+
     }
 
     /**
@@ -59,6 +84,11 @@ class CustomController extends Controller
     public function edit($id)
     {
         //
+      // $res=Custom::where('cust_id',$id)->get();
+        $res=Custom::find($id);
+        $Salesman=Salesman::all();
+       //dd($res);
+       return view('admin.custom.edit',['res'=>$res,'Salesman'=>$Salesman]);
     }
 
     /**
@@ -68,9 +98,15 @@ class CustomController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CustomPost $request, $id)
     {
-        //
+        //  
+        $zhi=request()->except('_token');                          
+         $res=Custom::where("cust_id",$id)->update($zhi);
+         if($res!==false){
+            return redirect("/custom");    
+         }
+        
     }
 
     /**
@@ -82,5 +118,11 @@ class CustomController extends Controller
     public function destroy($id)
     {
         //
+
+        $Custom =Custom::destroy($id);
+        if($Custom){
+            echo "1";
+        }
+
     }
 }

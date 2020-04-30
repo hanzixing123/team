@@ -58,21 +58,21 @@
     <dt>客户管理</dt>
     <!--当前链接则添加class:active-->
     <dd><a href="{{url('/custom/add')}}" >新增客户</a></dd>
-    <dd><a href="{{url('/custom/index')}}">客户列表</a></dd>
+    <dd><a href="{{url('/custom/')}}">客户列表</a></dd>
    </dl>
   </li>
     <li>
    <dl>
     <dt>客户拜访管理</dt>
-    <dd><a href="{{url('/visit/add')}}">业务员添加</a></dd>
-    <dd><a href="{{url('/visit/index')}}">业务员列表</a></dd>
+    <dd><a href="{{url('/visit/add')}}">新增客户拜访</a></dd>
+    <dd><a href="{{url('/visit/')}}">客户拜访列表</a></dd>
    </dl>
   </li>
   <li>
    <dl>
     <dt>业务员管理</dt>
     <dd><a href="{{url('/salesman/add')}}">业务员添加</a></dd>
-    <dd><a href="{{url('/salesman/index')}}">业务员列表</a></dd>
+    <dd><a href="{{url('/salesman/')}}">业务员列表</a></dd>
    </dl>
   </li>
   <li>
