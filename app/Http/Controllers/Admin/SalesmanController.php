@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use DB;
+use App\Salesman;
 class SalesmanController extends Controller
 {
     /**
@@ -14,7 +15,10 @@ class SalesmanController extends Controller
      */
     public function index()
     {
-        //
+
+
+        $salesman=Salesman::orderBy('sale_id')->paginate(2);
+        return view('admin.salesman.index',['sale'=>$salesman]);
     }
 
     /**
@@ -24,7 +28,7 @@ class SalesmanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.salesman.create');
     }
 
     /**
@@ -35,9 +39,16 @@ class SalesmanController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
 
+        $post=request()->except(['_token']);
+        //表单验证
+      
+
+      $res=DB::table('salesman')->insert($post);
+        if($res){
+            return redirect('/salesman');
+        }
+}
     /**
      * Display the specified resource.
      *
@@ -57,7 +68,8 @@ class SalesmanController extends Controller
      */
     public function edit($id)
     {
-        //
+        $salesman=Salesman::find($id);
+        return view('admin.salesman.edit',['sale'=>$salesman]);
     }
 
     /**
@@ -69,7 +81,12 @@ class SalesmanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $post=$request->except(['_token',"/salesman/update/".$id]);
+        $res=Salesman::where('sale_id',$id)->update($post);  //2
+        //dd($res);
+        if($res!==false){
+            return redirect('/salesman');
+        }
     }
 
     /**
@@ -80,6 +97,9 @@ class SalesmanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $res=Salesman::destroy($id);
+        if($res){
+            return redirect("/salesman");
+        }
     }
 }
