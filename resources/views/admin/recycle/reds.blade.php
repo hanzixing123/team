@@ -9,18 +9,18 @@
        <a class="fr top_rt_btn">返回首页</a>
       </div>
       <form>
-  业务员名称:<input type="text" name="sale_name" value="{{$all->sale_name??''}}">
-  业务员性别:<input type="text" name="sale_sex" value="{{$all->sale_sex??''}}">
-  业务员电话:<input type="text" name="sale_phone" value="{{$all->sale_phone??''}}">
-  业务员手机:<input type="text" name="sale_tel" value="{{$all->sale_tel??''}}">
-  客户名称:<input type="text" name="cust_name" value="{{$all->cust_name??''}}">
-  客户级别:<input type="text" name="cust_rank" value="{{$all->cust_rank??''}}"><br>
-  客户来源:<input type="text" name="cust_from" value="{{$all->cust_from??''}}">
-  客户电话:<input type="text" name="cust_phone" value="{{$all->cust_phone??''}}">
-  客户手机:<input type="text" name="cust_tel" value="{{$all->cust_tel??''}}">
-  访问人:<input type="text" name="vis_name" value="{{$all->vis_name??''}}">
-  访问地址:<input type="text" name="vis_url" value="{{$all->vis_url??''}}">
-  访问详情:<input type="text" name="vis_desc" value="{{$all->vis_desc??''}}">
+  业务员名称:<input type="text" name="sale_name" value="{{$all['sale_name'] ??''}}">
+  业务员性别:<input type="text" name="sale_sex" value="{{$all['sale_sex'] ??''}}">
+  业务员电话:<input type="text" name="sale_phone" value="{{$all['sale_phone'] ??''}}">
+  业务员手机:<input type="text" name="sale_tel" value="{{$all['sale_tel'] ??''}}">
+  客户名称:<input type="text" name="cust_name" value="{{$all['cust_name'] ??''}}">
+  客户级别:<input type="text" name="cust_rank" value="{{$all['cust_rank'] ??''}}"><br>
+  客户来源:<input type="text" name="cust_from" value="{{$all['cust_from'] ??''}}">
+  客户电话:<input type="text" name="cust_phone" value="{{$all['cust_phone'] ??''}}">
+  客户手机:<input type="text" name="cust_tel" value="{{$all['cust_tel'] ??''}}">
+  访问人:<input type="text" name="vis_name" value="{{$all['vis_name'] ??''}}">
+  访问地址:<input type="text" name="vis_url" value="{{$all['vis_url'] ??''}}">
+  访问详情:<input type="text" name="vis_desc" value="{{$all['vis_desc'] ??''}}">
         <input type="submit" value="搜索">
       </form>
       <table class="table">

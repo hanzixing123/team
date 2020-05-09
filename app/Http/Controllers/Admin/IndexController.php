@@ -86,3 +86,41 @@ class IndexController extends Controller
         //
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+项目git操作流程：
+
+在自己的分支上
+
+git add .  // 添加文件到暂存区
+
+git commit -m’备注’  //暂存区文件提交到自己的分支
+
+git checkout master //切换到master 分支
+
+git merge 自己的分支  //合并分支（有冲突解决冲突）
+
+git pull   //拉取
+
+git push   //推送
+
+git checkout 自己的分支 //切换到自己的分支
+
+git merge master //合并master分支内容
