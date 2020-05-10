@@ -15,6 +15,7 @@
 		<div class="col-sm-5">
 			<input type="text" name="sale_name" class="form-control" id="firstname" 
 				   placeholder="请输入业务员姓名">
+			<font color="red">{{$errors->first("sale_name")}}</font>
 		</div>
 	</div>
 	<div class="form-group">
@@ -22,6 +23,7 @@
 		<div class="col-sm-5">
 			<input type="text" name="sale_sex" class="form-control" id="lastname" 
 				   placeholder="请输入业务员电话性别">
+			<font color="red">{{$errors->first("sale_sex")}}</font>
 		</div>
 	</div>
 		<div class="form-group">
@@ -29,6 +31,7 @@
 		<div class="col-sm-5">
 			<input type="text" name="sale_phone" class="form-control" id="firstname" 
 				   placeholder="请输入业务员办公电话">
+			<font color="red">{{$errors->first("sale_phone")}}</font>
 		</div>
 	</div>
 		<div class="form-group">
@@ -36,6 +39,7 @@
 		<div class="col-sm-5">
 			<input type="text" name="sale_tel" class="form-control" id="firstname" 
 				   placeholder="请输入业务员手机号码">
+			<font color="red">{{$errors->first("sale_tel")}}</font>
 		</div>
 	</div>
 		

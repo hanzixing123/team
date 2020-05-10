@@ -10,12 +10,35 @@
       </div>
         <form>
             客户名称:<input type="text" name="cust_nam" value="{{$all['cust_nam'] ??''}}">
-            客户级别:<input type="text" name="cust_rank" value="{{$all['cust_rank'] ??''}}">
-            客户从事行业:<input type="text" name="cust_pursue" value="{{$all['cust_pursue'] ??''}}">
+            客户级别:<select name="cust_rank">
+                        <option value="">请选择</option>
+                        <option value="初级">初级</option>
+                        <option value="中级">中级</option>
+                        <option value="高级">高级</option>
+                        <option value="顶级">顶级</option>
+                    </select>
+            客户从事行业:<select name="cust_pursue">
+                            <option value="">请选择</option>
+                            <option value="商业">商业</option>
+                            <option value="农林牧渔业">农林牧渔业</option>
+                            <option value="采矿业">采矿业</option>
+                            <option value="制造业">制造业</option>
+                            <option value="其他">其他</option>
+                          </select>
             业务员手机号:<input type="text" name="sale_tel" value="{{$all['sale_tel'] ??''}}">
-            客户来源:<input type="text" name="cust_from" value="{{$all['cust_from'] ??''}}"><br>
+            客户来源:<select name="cust_from">
+                        <option value="">请选择</option>
+                        <option value="忠实客">忠实客</option>
+                        <option value="买单客">买单客</option>
+                        <option value="顾客">顾客</option>
+                        <option value="店外流客">店外流客</option>
+                      </select><br>
             业务员名称:<input type="text" name="sale_name" value="{{$all['sale_name'] ??''}}">
-            业务员性别:<input type="text" name="sale_sex" value="{{$all['sale_sex'] ??''}}">
+            业务员性别:<select name="sale_sex">
+                          <option value="">请选择</option>
+                          <option value="男">男</option>
+                          <option value="女">女</option>
+                       </select>
             业务员电话:<input type="text" name="sale_phone" value="{{$all['sale_phone'] ??''}}">
             客户电话:<input type="text" name="cust_phone" value="{{$all['cust_phone'] ??''}}">
             客户手机号:<input type="text" name="cust_tel" value="{{$all['cust_tel'] ??''}}">

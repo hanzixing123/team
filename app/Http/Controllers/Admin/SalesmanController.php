@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
 use App\Salesman;
+use App\Http\Requests\SelsmanStrout;
 class SalesmanController extends Controller
 {
     /**
@@ -15,9 +16,7 @@ class SalesmanController extends Controller
      */
     public function index()
     {
-
-
-        $salesman=Salesman::orderBy('sale_id')->paginate(2);
+        $salesman=Salesman::orderBy('sale_id',"desc")->paginate(2);
         return view('admin.salesman.index',['sale'=>$salesman]);
     }
 
@@ -37,14 +36,14 @@ class SalesmanController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SelsmanStrout $request)
     {
 
         $post=request()->except(['_token']);
         //表单验证
       
 
-      $res=DB::table('salesman')->insert($post);
+      $res=Salesman::insert($post);
         if($res){
             return redirect('/salesman');
         }

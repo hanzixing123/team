@@ -41,17 +41,15 @@
 <header>
  <h1><img src="/static/Picture/admin_logo.png"/></h1>
  <ul class="rt_nav">
-  <li><a href="http://www.deathghost.cn" target="_blank" class="website_icon">站点首页</a></li>
-  <li><a href="#" class="clear_icon">清除缓存</a></li>
-  <li><a href="#" class="admin_icon">DeathGhost</a></li>
+  <li><a href="{{url('/')}}" target="_blank" class="website_icon">站点首页</a></li>
   <li><a href="#" class="set_icon">账号设置</a></li>
-  <li><a href="login.html" class="quit_icon">安全退出</a></li>
+  <li><a href="{{url('/login')}}" class="quit_icon">安全退出</a></li>
  </ul>
 </header>
 <!--aside nav-->
 <!--aside nav-->
 <aside class="lt_aside_nav content mCustomScrollbar">
- <h2><a href="{{url('/')}}">起始页</a></h2>
+ <h2><a href="{{url('/')}}">访问列表</a></h2>
  <ul>
   <li>
    <dl>
@@ -72,7 +70,7 @@
    <dl>
     <dt>业务员管理</dt>
     <dd><a href="{{url('/salesman/create')}}">业务员添加</a></dd>
-    <dd><a href="{{url('/salesman/index')}}">业务员列表</a></dd>
+    <dd><a href="{{url('/salesman')}}">业务员列表</a></dd>
    </dl>
   </li>
   <li>
